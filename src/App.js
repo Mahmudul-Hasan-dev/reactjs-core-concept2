@@ -2,9 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // const products
+  const products = [
+    { Name: "laptop", price: "145000" },
+    { Name: "phone", price: "140000" },
+    { Name: "watch", price: "45000" },
+    { Name: "pc", price: "145000" }
+  ]
   return (
     <div className="App">
+      {
+        products.map(product => <Product name={product.Name} price={product.price}></Product>)
+      }
       <h2>hello</h2>
       <Product name="laptop" price="10000"></Product>
     </div>
