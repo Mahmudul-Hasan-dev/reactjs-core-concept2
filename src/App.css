@@ -32,7 +32,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.product {
+  background-color: #c27979;
+  color: azure;
+  border: #282c34 solid 1px;
+  border-radius: 10px;
 }

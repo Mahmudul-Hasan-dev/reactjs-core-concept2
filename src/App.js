@@ -2,24 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // const products
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>hello</h2>
+      <Product name="laptop" price="10000"></Product>
     </div>
   );
+}
+
+function Product(props) {
+  return (
+    <div className='product'>
+      <h3>Name: {props.name}</h3>
+      <p>Price: {props.price}</p>
+    </div>
+  )
 }
 
 export default App;
